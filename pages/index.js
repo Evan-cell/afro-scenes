@@ -7,13 +7,13 @@ import request from '@/utils/request';
 
 
 
-export default function Home(props) {
-  console.log(props)
+export default function Home({results}) {
+
   return (
     <div className=''>
       <Header/>
       <Nav/>
-      <Results/>
+      <Results results={results}/>
     </div>
   )
 }
